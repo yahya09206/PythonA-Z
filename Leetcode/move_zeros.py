@@ -7,6 +7,7 @@ def move_zeroes(nums: List[int]) -> None:
 	# loop through list
 	for r in range(len(nums)):
 
+		# check if index is equal to 0
 		if nums[r]:
 
 			temp = nums[l]
