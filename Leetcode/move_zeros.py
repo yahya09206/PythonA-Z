@@ -4,6 +4,7 @@ def move_zeroes(nums: List[int]) -> None:
 
 	l = 0
 
+	# loop through list
 	for r in range(len(nums)):
 
 		if nums[r]:
