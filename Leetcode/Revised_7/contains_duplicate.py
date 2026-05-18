@@ -2,12 +2,12 @@ def contains_duplicate(nums:List[int]) -> bool:
 
 	seen = {}
 
-	for i, num in enumerate(nums):
+	for num in nums:
 
 		if num in seen:
 			return True
 			
-		seen[num] = i 
+		seen[num] = num 
 
 	return False
 
