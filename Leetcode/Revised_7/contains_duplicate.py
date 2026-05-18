@@ -7,7 +7,7 @@ def contains_duplicate(nums:List[int]) -> bool:
 		if num in seen:
 			return True
 			
-		seen[num] = num 
+		seen[num] = True 
 
 	return False
 
