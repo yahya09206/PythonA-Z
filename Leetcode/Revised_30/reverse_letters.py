@@ -1,0 +1,28 @@
+def reverse_letter(s:str) -> str:
+
+	chars = list(s)
+	l = 0
+	r = len(s) - 1
+
+	while l < r:
+
+		while l < r and not chars[l].isalpha():
+			l += 1
+
+		while l < r and not chars[r].isalpha():
+			r -= 1
+
+
+		if l < r:
+			chars[l], chars[r] = chars[r], chars[l]
+
+		l += 1
+		r -= 1
+
+	return "".join(chars)
+
+
+print(reverse_letter("Test1ng-Leet=code!"))
+
+
+
