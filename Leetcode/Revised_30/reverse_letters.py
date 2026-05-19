@@ -23,6 +23,8 @@ def reverse_letter(s:str) -> str:
 
 
 print(reverse_letter("Test1ng-Leet=code!"))
+print(reverse_letter("Test1ng-Leet=code-Q!"))
+
 
 
 

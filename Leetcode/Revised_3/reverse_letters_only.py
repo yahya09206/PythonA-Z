@@ -15,10 +15,11 @@ def reverse_only_letters(s:str) -> str:
 		if l < r:
 			chars[l], chars[r] = chars[r], chars[l]
 
-		l += 1
-		r -= 1
+			l += 1
+			r -= 1
 
 	return "".join(chars)
 
 
 print(reverse_only_letters("Test1ng-Leet=code!"))
+print(reverse_only_letters("Test1ng-Leet=code-Q!"))

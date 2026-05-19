@@ -9,7 +9,7 @@ def reverse_only_letters(s:str) -> str:
 		# Step 2: Skip non-letters from the left
         # (Hint: Use a while loop + chars[l].isalpha())
         while l < r and not chars[l].isalpha():
-        	l += 1
+            l += 1
             
             
         # Step 3: Skip non-letters from the right
