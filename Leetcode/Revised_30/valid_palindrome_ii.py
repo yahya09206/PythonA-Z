@@ -28,7 +28,7 @@ def valid_palindrome_ii(s):
 
 
 word = "aba"
-word2 = "abc"
+word2 = "abc" 
 
 print(valid_palindrome_ii(word))
 print(valid_palindrome_ii(word2))
