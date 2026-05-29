@@ -13,3 +13,8 @@ def top_k_frequent(nums:List[int], k: int) -> List[int]:
 
 
 	return [num for freq, num in pairs_list[:k]]
+
+
+
+print(top_k_frequent([1,1,1,2,2,3], 2))
+print(top_k_frequent([1], 1))
