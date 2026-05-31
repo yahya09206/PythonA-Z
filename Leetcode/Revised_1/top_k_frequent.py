@@ -4,6 +4,7 @@ def top_k_frequent(nums: List[int], k: int) -> List[int]:
 
 	for num in nums:
 
+		# need to get this part down packed
 		count[num] = count.get(num, 0) + 1
 
 	pairs_list = [(freq, num) for num, freq in count.items()]
