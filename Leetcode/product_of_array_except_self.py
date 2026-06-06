@@ -6,10 +6,8 @@ def product_of_array_except_self(nums: List[int]) -> List[int]:
 	for i in range(1, len(nums)):
 		prefix[i] = nums[i - 1] * prefix[i - 1]
 	
-
 	for j in range(len(nums) - 2, -1, -1):
 		suffix[j] = nums[j + 1] * suffix[j + 1]
-
 
 	result = []
 
@@ -18,3 +16,6 @@ def product_of_array_except_self(nums: List[int]) -> List[int]:
 
 	return result
 
+
+print(product_of_array_except_self([1,2,3,4]))
+print(product_of_array_except_self([-1,1,0,-3,3]))
