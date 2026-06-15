@@ -1,3 +1,8 @@
-def valid_sudoku(board:List[int]) -> bool:
+def valid_sudoku(board:List[List[str]]) -> bool:
 
-	# need to declare dict
+	# need to declare dicts
+	rows = collections.defaultdict(set)
+	cols = collections.defaultdict(set)
+	cols = collections.defaultdict(set)
+
+	
