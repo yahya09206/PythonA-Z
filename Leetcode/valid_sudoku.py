@@ -12,3 +12,6 @@ def valid_sudoku(board:List[List[str]]) -> bool:
 			# skip if the value is an empty square
 			if val == ".":
 				continue
+
+			# calculate the box tuple key using r // 3 and c // 3
+			box_key = (r // 3, c // 3)
