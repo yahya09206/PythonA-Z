@@ -8,6 +8,7 @@ def valid_sudoku(board:List[List[str]]) -> bool:
 	cols = collections.defaultdict(set)
 	boxes = collections.defaultdict(set)
 
+	# loop through board
 	for r in range(9):
 		for c in range(9):
 			val = board[r][c]
