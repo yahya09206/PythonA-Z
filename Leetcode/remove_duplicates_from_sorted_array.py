@@ -4,3 +4,5 @@ def remove_duplicates(nums:List[int]) -> int:
 
 	# loop thru list
 	for r in range(nums):
+
+		# check for duplicate
