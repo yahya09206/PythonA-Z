@@ -6,3 +6,4 @@ def remove_duplicates(nums:List[int]) -> int:
 	for r in range(nums):
 
 		# check for duplicate
+		if r != 0:
