@@ -7,4 +7,4 @@ def remove_duplicates(nums:List[int]) -> int:
 
 		# check for duplicate
 		if r != 0:
-			# swap
+			# swap pointers
