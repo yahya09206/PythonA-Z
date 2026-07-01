@@ -22,7 +22,11 @@ def three_sum(nums:List[int]) -> List[List[int]]:
 			elif three_sum > 0:
 				r -= 1
 			else:
-				result.append(a, nums[l], nums[r])
-
+				result.append([a, nums[l], nums[r]])
 				l += 1
 				r -= 1
+
+				while l < r and nums[l] == nums[l - 1]:
+					l += 1
+
+	return result
