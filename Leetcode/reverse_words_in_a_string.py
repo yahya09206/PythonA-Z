@@ -1,6 +1,5 @@
 def reverse_words_in_a_string(s:str) -> str:
 
-	l = len(s) - 1
 	r = len(s) - 1
 	words = []
 
@@ -8,6 +7,9 @@ def reverse_words_in_a_string(s:str) -> str:
 
 		while r >= 0 and s[r] == ' ':
 			r -= 1
+
+		if r < 0:
+			break
 
 		l = r
 		while l >= 0 and s[l] != ' ':
