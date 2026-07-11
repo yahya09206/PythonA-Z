@@ -35,5 +35,6 @@ def squares_of_sorted_array(nums:List[int]) -> List[int]:
 
 
 print(squares_of_sorted_array([-4,-1,0,3,10]))
+print(squares_of_sorted_array([-7,-3,2,3,11]))
 
 
