@@ -1,12 +1,25 @@
 def remove_duplicates_from_sorted(nums:List[int]) -> int:
 
-	result = []
+	l = 1
 
-	for i in nums:
-		if i not in result:
-			result.append(i)
+	for r in range(1, len(nums)):
 
-	return result
+		if nums[r] != nums[r - 1]:
+
+			nums[l] = nums[r]
+
+			l += 1
+
+	return l
+
+
+	# result = []
+
+	# for i in nums:
+	# 	if i not in result:
+	# 		result.append(i)
+
+	# return result
 
 
 print(remove_duplicates_from_sorted([1,1,2]))
