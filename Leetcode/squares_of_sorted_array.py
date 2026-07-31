@@ -5,7 +5,6 @@ def squares_of_sorted_array(nums:List[int]) -> List[int]:
 	res = [0] * len(nums)
 	p = len(res) - 1
 
-
 	while l <= r:
 
 		left_square = nums[l] * nums[l]
@@ -17,7 +16,7 @@ def squares_of_sorted_array(nums:List[int]) -> List[int]:
 		else:
 			res[p] = left_square
 			l += 1
-			
+
 		p -= 1
 
 	return res
