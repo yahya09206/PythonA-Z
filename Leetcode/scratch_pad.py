@@ -1,15 +1,14 @@
-def contains_duplicate(nums:List[int]) -> bool:
+def replace_elements(arr:List[int]) -> List[int]:
 
-	seen = set()
+	max_so_far = -1
 
-	for num in nums:
-		if num in seen:
-			return True
+	for i in range(len(arr) - 1, -1, -1):
 
-		seen.add(num)
+		temp = arr[i]
+		arr[i] = max_so_far
+		max_so_far = max(max_so_far, temp)
 
-	return False
+	return arr
 
-print(contains_duplicate([1,2,3,1]))
-print(contains_duplicate([1,2,3,4]))
-print(contains_duplicate([1,1,1,3,3,4,3,2,4,2]))
+print(replace_elements([17,18,5,4,6,1]))
+print(replace_elements([400]))
