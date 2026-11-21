@@ -10,10 +10,12 @@ def majority_element_ii(nums:List[int]) -> List[int]:
 				counter += 1
 
 		if counter > len(nums) // 3: 
+			if nums[i] not in result:
+				result.append(nums[i])
+			
+		counter = 0
 
-			counter = 0
-
-	return nums[i]
+	return result
 
 print(majority_element_ii([3,2,3]))
 print(majority_element_ii([1]))
