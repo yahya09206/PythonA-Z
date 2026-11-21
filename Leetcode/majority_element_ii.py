@@ -1,5 +1,22 @@
 def majority_element_ii(nums:List[int]) -> List[int]:
 
-	counter = 0
+	result = []
 
-	
+
+	for i in range(len(nums)):
+		counter = 0
+		for j in range(len(nums)):
+			if nums[i] == nums[j]:
+				counter += 1
+
+		if counter > len(nums) // 3: 
+
+			counter = 0
+
+	return nums[i]
+
+print(majority_element_ii([3,2,3]))
+print(majority_element_ii([1]))
+print(majority_element_ii([1,2]))
+
+
